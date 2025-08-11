@@ -1,0 +1,24 @@
+:root { --bg:#0f172a; --panel:#0b1220; --card:#111827; --line:#1f2937; --fg:#e2e8f0; --muted:#94a3b8; --accent:#2563eb; }
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans CJK SC",sans-serif;background:var(--bg);color:var(--fg)}
+.wrap{max-width:1100px;margin:24px auto;padding:0 16px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+h1{font-size:18px;margin:0}
+.controls{display:flex;gap:12px;align-items:center}
+label{font-size:12px;color:var(--muted)}
+input[type=number]{width:64px;padding:6px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}
+button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+main{display:grid;grid-template-columns:1fr 360px;gap:12px}
+#chat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+#messages{height:460px;overflow:auto;padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:8px}
+.msg{margin:10px 0;line-height:1.6}
+.msg.you{color:#93c5fd}
+.msg.bot{color:#a7f3d0;white-space:pre-wrap}
+#hits{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.hit{padding:8px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel);font-size:12px;color:var(--muted)}
+.hit b{color:var(--fg)}
+footer{margin-top:10px;color:var(--muted);font-size:12px}
+form{display:flex;gap:8px}
+#q{flex:1;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}
+.ctx { padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px; background:var(--panel); font-size:12px; color:var(--muted); white-space:pre-wrap }
+.ctx b{ color:var(--fg) }
+

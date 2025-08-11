@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>意識強度SOC-AI（focus）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>意識強度SOC-AI</h1>
+      <div class="controls">
+        <label>TopK <input id="topk" type="number" min="4" max="64" value="32"></label>
+        <label>Support <input id="supportk" type="number" min="0" max="8" value="5"></label>
+        <button id="ping">接続検査</button>
+        <button id="ctxbtn">今回のコンテキストを表示</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="chat">
+        <div id="messages"></div>
+        <form id="form">
+          <input id="q" placeholder="输入你的问题，例如：如何提升意识强度" autocomplete="off">
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside id="hits">
+        <h3>ヒット文書（再ランク後・二重スコア表示）</h3>
+        <div id="hitlist"></div>
+        <!-- 上下文展示区 -->
+        <h3 style="margin-top:12px;">今回のコンテキスト（メイン＋補足）</h3>
+        <div id="ctxlist"></div>
+        <div id="hitlist"></div>
+      </aside>
+    </main>
+
+    <!-- <footer>
+      <small>Focus-only · CrossEncoder 重排 · 双分数(vec / rerank)</small>
+    </footer> -->
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
