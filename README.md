@@ -31,7 +31,7 @@ AI開発スキル、知識ベース統合、フロントエンドとバックエ
 ---
 
 ## 📂 Project Structure / プロジェクト構成
-
+```
 SOC-AI/
 ├── app/ # Flask backend
 ├── static/ # CSS, JS
@@ -42,7 +42,7 @@ SOC-AI/
 ├── rag_chat.py # RAG + rerank + prompt logic
 ├── requirements.txt # Python dependencies
 └── README.md # This file
----
+```
 
 ## 🚀 Installation & Run / インストールと実行
 **1. Clone the repository / リポジトリをクローン**
@@ -57,6 +57,7 @@ pip install -r requirements.txt
 ```
 
 **3. Prepare knowledge base / ナレッジベース準備**
+
 Place .txt documents into data/ folder.
 
  (https://awakenology.org/) から収集した資料を data/ フォルダに配置。
