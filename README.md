@@ -64,7 +64,7 @@ data/ フォルダに .txt ドキュメントを配置。
 **4. Build vector store / ベクトルストアの作成**
 ```bash
 python ingest.py
-
+```
 **5. Run the web app / Webアプリ実行**
 ```bash
 python app/server.py
@@ -73,7 +73,7 @@ Then open: http://127.0.0.1:5000
 
 ---
 
-## Purpose / 目的
+## 🎯 Purpose / 目的
 This project was created as a demo to demonstrate:
 - Practical AI application development from scratch.
 - Integration of niche domain knowledge with LLMs.
